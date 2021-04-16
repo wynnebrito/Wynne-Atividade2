@@ -11,7 +11,7 @@ int main() {
  string palavra;
  
   while(rodarCodigo==true){
-    cout << "Digite a palavra desejada \n";
+    cout << "Digite a palavra desejada \n\n";
     cin >> palavra; 
     int tamanhoPalavra = size(palavra);
 
@@ -72,18 +72,14 @@ int main() {
              cout << "#9=4 \n";
             }
       }
-      cout << "Deseja inserir outra palavra? \n Digite '1' para sim ou '2' para encerrar o programa \n";
+      cout << "\nDeseja inserir outra palavra? \n\n Digite '1' para sim ou '2' para encerrar o programa \n\n";
       cin >> teste;
       if(teste == 2){
         cout << "Até a próxima! ヽ(^o^)丿\n";
         rodarCodigo=false;
       }
-     }else{
-       do {
-         cout << "A palavra inserida é muito grande. Por favor insira uma outra palavra com menos de 50 caracteres \n";
-         cout << "Digite a palavra desejada \n";
-         cin >> palavra;
-      }while( tamanhoPalavra > 50);
-    }
+     }else{      
+       cout << "A palavra inserida é muito grande. Por favor insira uma outra palavra com menos de 50 caracteres \n\n";
+     }
   }
 }
